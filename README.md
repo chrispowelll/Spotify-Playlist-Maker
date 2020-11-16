@@ -2,12 +2,8 @@
 ## Spotify Playlist Maker
 Creates a Spotify playlist based on suggested artists, genres, mood and popularity.
 
-## Languages
-- Python
-- HTML
-- CSS
-
-## Built With
+## Requirements
+- [Python](https://www.python.org/)
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 - [Spotipy](https://github.com/plamere/spotipy)
 
