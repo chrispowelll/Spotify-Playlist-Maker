@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spotify Playlist Maker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+	<div class="body-container">
+		<div class="body-wrapper">
+			<form class="form" action="" method="POST">
+				<span class="form-title">Spotify Playlist Maker</span>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Username</span>
+					<input class="form-input" type="text" name="usernameInput" placeholder="Enter your Spotify username">
+				</div>
+				<div class="form-btn-container">
+					<div class="form-btn-wrapper">
+						<div class="form-btn-bg"></div>
+						<button class="form-btn" type="submit">
+							<span>Login</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
