@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spotify Playlist Maker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+	<div class="body-container">
+		<div class="body-wrapper">
+			<form class="form" action="/success/" method="POST">
+				<span class="form-title">Playlist Created!</span>
+				<div class="form-input-wrapper" style="border-bottom: none;">
+					<iframe src={{embedCode}} width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div class="form-btn-container">
+					<div class="form-btn-wrapper">
+						<div class="form-btn-bg"></div>
+						<button class="form-btn" type="submit">
+							<span>Make Another Playlist</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
