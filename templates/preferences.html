@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spotify Playlist Maker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+	<div class="body-container">
+		<div class="body-wrapper">
+			<form class="form" action="/preferences/" method="POST">
+				<span class="form-title">Set Preferences</span>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Selected Artists</span>
+					<input class="form-input" type="text" name="artists" placeholder="eg. The Beatles, Katy Perry, Metallica">
+				</div>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Selected Genres</span>
+					<input class="form-input" type="text" name="genres" placeholder="eg. Classic Rock, Pop, Metal">
+				</div>
+				<div class="form-btn-container">
+					<div class="form-btn-wrapper">
+						<div class="form-btn-bg"></div>
+						<button class="form-btn" type="submit">
+							<span>Continue</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
