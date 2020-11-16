@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spotify Playlist Maker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+	<div class="body-container">
+		<div class="body-wrapper">
+			<form class="form" action="/filters/" method="post">
+				<span class="form-title">Set Filters</span>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Mood</span>
+					<label style="margin-top: 15px;" class="radio-container">
+						<span>Happy Music</span>
+  						<input type="radio" value="Happy Music" name="valence">
+  						<span class="checkmark"></span>
+					</label>
+					<label class="radio-container">
+						<span>Sad Music</span>
+  						<input type="radio" value="Sad Music" name="valence">
+  						<span class="checkmark"></span>
+					</label>
+					<label class="radio-container">
+						<span>No Preference</span>
+  						<input type="radio" name="valence" value="No Preference" checked="checked">
+  						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Popularity</span>
+					<label style="margin-top: 15px;" class="radio-container">
+						<span>Popular Music</span>
+  						<input type="radio" name="popularity" value="Popular Music">
+  						<span class="checkmark"></span>
+					</label>
+					<label class="radio-container">
+						<span>Unpopular Music</span>
+  						<input type="radio" name="popularity" value="Unpopular Music">
+  						<span class="checkmark"></span>
+					</label>
+					<label class="radio-container">
+						<span>No Preference</span>
+  						<input type="radio" value="No Preference" name="popularity" checked="checked">
+  						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="form-btn-container">
+					<div class="form-btn-wrapper">
+						<div class="form-btn-bg"></div>
+						<button type="submit" class="form-btn">
+							<span>Create Playlist</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
