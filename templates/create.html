@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spotify Playlist Maker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+	<div class="body-container">
+		<div class="body-wrapper">
+			<form class="form" action="/create/" method="POST">
+				<span class="form-title">Create Playlist</span>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Playlist Name</span>
+					<input class="form-input" type="text" name="playlistName" placeholder="Enter the playlist name">
+				</div>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Playlist Description</span>
+					<input class="form-input" type="text" name="playlistDescription" placeholder="Enter the playlist description">
+				</div>
+				<div class="form-input-wrapper">
+					<span class="form-input-label">Privacy</span>
+					<label style="margin-top: 15px;" class="radio-container">
+						<span>Public</span>
+  						<input type="radio" value="Public" name="privacy" checked="checked">
+  						<span class="checkmark"></span>
+					</label>
+					<label class="radio-container">
+						<span>Private</span>
+  						<input type="radio" value="Private" name="privacy">
+  						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="form-btn-container">
+					<div class="form-btn-wrapper">
+						<div class="form-btn-bg"></div>
+						<button class="form-btn" type="submit">
+							<span>Continue</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
