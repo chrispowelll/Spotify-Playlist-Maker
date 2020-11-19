@@ -2,6 +2,8 @@
 ## Spotify Playlist Maker
 Creates a Spotify playlist based on suggested artists, genres, mood and popularity.
 
+Available to use online at [https://chrispowell.media/spotify/](https://chrispowell.media/spotify/)
+
 ## Requirements
 - [Python](https://www.python.org/)
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
